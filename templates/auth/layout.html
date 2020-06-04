@@ -1,0 +1,96 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="icon" type="image/png" href="static/favicon.png">
+    <script src="https://kit.fontawesome.com/099920eaad.js" crossorigin="anonymous"></script>
+    <title>Login | Cobalt</title>
+</head>
+
+<br>
+<a href="/" style="margin: 25px; font-size:25px; color: black;"><i class="fas fa-times"></i></a>
+
+<div class="center-box">
+
+    <div class="center-content">
+        {%block content%}
+        {%endblock content%}
+    </div>
+    <div class="background-strip"></div>
+
+</div>
+
+<style>
+    .center-box {
+        border-radius: 20px;
+        display: inline-block;
+        width: 300px;
+        position: fixed;
+        left: calc(50% - 150px);
+        top: calc(50% - 150px);
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    .center-content {
+        padding: 25px;
+        padding-bottom: 0px;
+        flex: 1;
+    }
+
+    .background-strip {
+        height: 20px;
+        background: url('static/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #authForm input {
+        padding: 10px;
+        outline: none;
+        border: none;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        height: 40px;
+    }
+
+    #authForm input[type=submit] {
+        cursor: pointer;
+        font-weight: bold;
+        margin: 0;
+    }
+
+
+    .error {
+        padding: 5px;
+        border: solid 1px red;
+        background: rgba(255, 77, 77, 0.2);
+        color: #c23616;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .success {
+        padding: 5px;
+        border: solid 1px green;
+        background: rgba(46, 204, 113, 0.2);
+        color: rgba(39, 174, 96, 1.0);
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+</style>

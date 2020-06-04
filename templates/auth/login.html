@@ -1,0 +1,17 @@
+{%extends "auth/layout.html"%}
+
+{%block content%}
+<div class="header" style="padding: 0;">
+    <h1 style="display: inline-block;">Login.</h1>
+</div>
+{%if error%}
+<div class="error">{{error}}</div>
+{%else%}
+<br>
+{%endif%}
+<form method="POST" id="authForm">
+    <input type="text" name="username" id="" placeholder="Username">
+    <input type="password" name="password" id="" placeholder="Password">
+    <input class="primary" type="submit" value="Submit">
+</form>
+{%endblock content%}
